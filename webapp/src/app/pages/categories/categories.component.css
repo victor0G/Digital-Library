@@ -1,0 +1,167 @@
+/* Category Header Styles */
+.category-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/placeholder.svg?height=300&width=1200") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.category-header h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.category-header p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Category List Styles */
+.category-list {
+  padding: 60px 5%;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.tab-btn {
+  background: #f0f0f0; /* Light background for buttons */
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #4361ee; /* Highlight color on hover */
+  color: white;
+}
+
+.tab-btn.active {
+  background-color: #4361ee; /* Active button color */
+  color: white;
+}
+
+/* Book Slider Styles */
+.book-slider {
+  margin-bottom: 40px; /* Space between categories */
+}
+.book-slider h3 {
+  text-transform: capitalize;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.book-container-wrapper{
+  margin: 3rem 0;
+}
+.book-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.book-cover {
+  height: 320px; /* Increased height for better image fitting */
+  overflow: hidden;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.book-card:hover .book-cover img {
+  transform: scale(1.05);
+}
+
+.book-info {
+  padding: 20px; /* Increased padding for better spacing */
+}
+
+.book-info h4 {
+  font-size: 20px; /* Increased font size */
+  margin-bottom: 5px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.author {
+  color: #666;
+  font-size: 15px; /* Increased font size */
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #ddd;
+  font-size: 20px; /* Increased star size */
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star.half-filled {
+  position: relative;
+  color: #ddd;
+}
+
+.star.half-filled::before {
+  content: "★";
+  position: absolute;
+  color: #ffc107;
+  width: 50%;
+  overflow: hidden;
+}
+
+.rating-text {
+  margin-left: 5px;
+  font-size: 15px; /* Increased font size */
+  color: #666;
+}
+
+/* See All Button Styles */
+.see-all {
+  float: right;
+  background-color: #4361ee; /* Button background color */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.see-all:hover {
+  background-color: #3a54b8; /* Darker shade on hover */
+}

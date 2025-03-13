@@ -1,0 +1,21 @@
+<main>
+    <div class="banner">
+        <section class="welcome-section">
+            <h2>Welcome To The Modern Era Of Library</h2>
+            <h5>Browse, borrow, and read books online with ease.</h5>
+            <a class="get-started-btn" href="#">Get Started</a>
+        </section>
+    </div>
+
+    <section class="trending-books">
+        <h5 style="color: whitesmoke;">New Arrivals >></h5>
+        <div class="book-container">
+            @for (book of books; track $index){
+            @for (book of books; track book._id){
+            <app-book-card [name]="book.bookName" [author]="book.author" [image]="book.imageUrl"
+                [rating]="book.rating" [showBorrow]="true"></app-book-card>
+            }
+            }
+        </div>
+    </section>
+</main>

@@ -1,0 +1,38 @@
+/* Footer codes */
+footer {
+  text-align: center;
+  background: #3c3d42ff;
+  height: 20rem;
+  color: whitesmoke;
+  position: relative;
+}
+
+.foot {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  text-decoration: none;
+  margin: 27px;
+  padding: 4px;
+  align-items: center;
+}
+#foot-items {
+  list-style: none;
+}
+#foot-items li {
+  padding-top: 8px;
+}
+#foot-items li a {
+  color: inherit;
+  text-decoration: none;
+}
+#foot-items li a:hover {
+    color: #999;
+    text-decoration: underline;
+}
+.fot-icon svg{
+height: 30px;
+width: 30px;
+margin: 4px;
+stroke:rgb(0, 0, 0);
+}

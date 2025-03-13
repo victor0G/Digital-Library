@@ -1,0 +1,17 @@
+<div class="book-card">
+    <div class="book-cover">
+        <img [src]="image" [alt]="name">
+    </div>
+    <div class="book-info">
+        <h4>{{name}}</h4>
+        <p class="author">{{author}}</p>
+        <div class="rating">
+            @for (r of getArrayFromSize(rating); track $index){
+            <span class="star filled">★</span>
+            }
+        </div>
+    </div>
+    @if(showBorrow){
+    <button class="borrow-btn">Borrow</button>
+    }
+</div>

@@ -1,0 +1,32 @@
+<section class="category-header">
+    <h2>Book Categories</h2>
+    <p>Explore our vast collection of books across different genres</p>
+</section>
+
+<section class="category-list">
+    <div class="category-tabs">
+        <button class="tab-btn active" data-category="fiction">Fiction</button>
+        <button class="tab-btn" data-category="non-fiction">Non-Fiction</button>
+        <button class="tab-btn" data-category="science-fiction">Science Fiction</button>
+        <button class="tab-btn" data-category="mystery">Mystery</button>
+        <button class="tab-btn" data-category="biography">Biography</button>
+        <button class="tab-btn" data-category="self-help">Self-Help</button>
+    </div>
+
+    <div class="book-slider">
+        @for (cat of getCategories(); track $index){
+        @if (books[cat].length > 0){
+        <div class="book-container-wrapper">
+            <h3>{{cat}}</h3>
+            <div class="book-container">
+                @for (book of books[cat]; track book._id){
+                <app-book-card [name]="book.bookName" [author]="book.author" [image]="book.imageUrl"
+                    [rating]="book.rating"></app-book-card>
+                }
+            </div>
+        </div>
+        }
+        }
+
+    </div>
+</section>

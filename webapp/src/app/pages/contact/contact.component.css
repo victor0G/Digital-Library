@@ -1,0 +1,66 @@
+
+.main1 {
+  height: 35rem;
+  width: 40%;
+  /* border: 2px solid black; */
+  display: inline-block;
+  vertical-align: top;
+  /* padding: 9px 0px; */
+  margin: 5px 50px;
+  /* background: rgb(206, 190, 190); */
+  border-radius: 7%;
+}
+
+.main1 .data {
+  height: 38px;
+  width: 88%;
+  margin: 15px 1px 5px 6px;
+  padding: 4px 1px 1px 24px;
+  border-radius: 13px;
+  border: 1px solid #aaa;
+  transition: 100ms ease;
+}
+.main1 .data:focus {
+  outline: 2px solid rgb(82, 82, 82);
+  outline-offset: 2.5px;
+}
+.main1 textarea {
+  height: 16rem;
+  width: 90%;
+  margin: 21px 1px 5px 6px;
+  padding: 12px 1px 1px 21px;
+  border-radius: 13px;
+}
+.main1 button {
+  height: 39px;
+  font-size: 16px;
+  color: whitesmoke;
+  background: rgb(37, 35, 35);
+  width: 80%;
+  margin: 11px 1px 5px 27px;
+  padding: 1px 1px 1px 21px;
+  border-radius: 11px;
+}
+
+.main2 {
+  height: 20rem;
+  width: 40%;
+  /* border: 2px solid black; */
+  display: inline-block;
+  vertical-align: top;
+  /* padding: 9px 0px; */
+  margin: 5px 50px;
+  padding: 20px 1px 1px 20px;
+  /* background: rgb(206, 190, 190); */
+  border-radius: 11px;
+}
+
+.main2 ul li {
+  list-style: none;
+  padding-top: 15px;
+  font-size: 1.2rem;
+}
+.main2 ul li > *{
+    vertical-align: middle;
+    margin-right: 0.75rem;
+}

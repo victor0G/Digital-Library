@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.add-book,
+.recent-books {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
+
+form button.edit {
+  background: #4caf50;
+}
+
+form button.edit:hover {
+  background: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #333;
+  color: #fff;
+}
+
+td img {
+  width: 50px;
+  height: auto;
+}
+
+.actions button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.actions .edit {
+  background: #4caf50;
+  color: #fff;
+}
+
+.actions .delete {
+  background: #f44336;
+  color: #fff;
+}
+
+/* select input styles */
+.custom-select {
+  position: relative;
+  width: 250px;
+}
+
+.custom-select select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Custom Arrow */
+.custom-select::after {
+  content: "▼";
+  font-size: 14px;
+  color: #4caf50;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Hover & Focus Effects */
+.custom-select select:hover,
+.custom-select select:focus {
+  border-color: #388e3c;
+  box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Style options when open (for modern browsers) */
+.custom-select select:focus-visible {
+  outline: none;
+}
+
+/* select end here */
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+  }
+}

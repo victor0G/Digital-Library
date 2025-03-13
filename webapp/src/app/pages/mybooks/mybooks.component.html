@@ -1,0 +1,208 @@
+
+<body>
+    <main>
+        <section class="mybooks-header">
+            <h2>My Books</h2>
+            <p>Manage your personal library</p>
+        </section>
+
+        <section class="mybooks-content">
+            <div class="mybooks-sidebar">
+                <div class="filter-section">
+                    <h3>Filter By</h3>
+                    <ul class="filter-options">
+                        <li class="active"><a href="#">All Books</a></li>
+                        <li><a href="#">Currently Reading</a></li>
+                        <li><a href="#">Completed</a></li>
+                        <li><a href="#">Borrowed</a></li>
+                        <li><a href="#">Purchased</a></li>
+                        <li><a href="#">Favorites</a></li>
+                    </ul>
+                </div>
+                <div class="sort-section">
+                    <h3>Sort By</h3>
+                    <select class="sort-dropdown">
+                        <option value="recent">Recently Added</option>
+                        <option value="title">Title (A-Z)</option>
+                        <option value="author">Author (A-Z)</option>
+                        <option value="rating">Rating (High to Low)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="books-container">
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/placeholder.svg?height=300&width=200" alt="The Great Gatsby">
+                        <div class="book-status reading">Reading</div>
+                    </div>
+                    <div class="book-details">
+                        <h3>The Great Gatsby</h3>
+                        <p class="author">F. Scott Fitzgerald</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                        <p class="progress-text">65% completed</p>
+                        <div class="book-actions">
+                            <a href="#" class="action-btn continue">Continue Reading</a>
+                            <a href="#" class="action-btn remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/placeholder.svg?height=300&width=200" alt="To Kill a Mockingbird">
+                        <div class="book-status completed">Completed</div>
+                    </div>
+                    <div class="book-details">
+                        <h3>To Kill a Mockingbird</h3>
+                        <p class="author">Harper Lee</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;"></div>
+                        </div>
+                        <p class="progress-text">Completed on March 15, 2025</p>
+                        <div class="book-actions">
+                            <a href="#" class="action-btn reread">Read Again</a>
+                            <a href="#" class="action-btn remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/placeholder.svg?height=300&width=200" alt="Sapiens">
+                        <div class="book-status borrowed">Borrowed</div>
+                    </div>
+                    <div class="book-details">
+                        <h3>Sapiens: A Brief History of Humankind</h3>
+                        <p class="author">Yuval Noah Harari</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 30%;"></div>
+                        </div>
+                        <p class="progress-text">30% completed</p>
+                        <div class="book-actions">
+                            <a href="#" class="action-btn continue">Continue Reading</a>
+                            <a href="#" class="action-btn remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/placeholder.svg?height=300&width=200" alt="Atomic Habits">
+                        <div class="book-status purchased">Purchased</div>
+                    </div>
+                    <div class="book-details">
+                        <h3>Atomic Habits</h3>
+                        <p class="author">James Clear</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%;"></div>
+                        </div>
+                        <p class="progress-text">Not started yet</p>
+                        <div class="book-actions">
+                            <a href="#" class="action-btn start">Start Reading</a>
+                            <a href="#" class="action-btn remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/placeholder.svg?height=300&width=200" alt="The Silent Patient">
+                        <div class="book-status reading">Reading</div>
+                    </div>
+                    <div class="book-details">
+                        <h3>The Silent Patient</h3>
+                        <p class="author">Alex Michaelides</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%;"></div>
+                        </div>
+                        <p class="progress-text">45% completed</p>
+                        <div class="book-actions">
+                            <a href="#" class="action-btn continue">Continue Reading</a>
+                            <a href="#" class="action-btn remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <div class="book-cover">
+                        <img src="/placeholder.svg?height=300&width=200" alt="Becoming">
+                        <div class="book-status completed">Completed</div>
+                    </div>
+                    <div class="book-details">
+                        <h3>Becoming</h3>
+                        <p class="author">Michelle Obama</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;"></div>
+                        </div>
+                        <p class="progress-text">Completed on February 20, 2025</p>
+                        <div class="book-actions">
+                            <a href="#" class="action-btn reread">Read Again</a>
+                            <a href="#" class="action-btn remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reading-stats">
+            <h2>Reading Statistics</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Books in Library</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Currently Reading</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">42</div>
+                    <div class="stat-label">Hours Read</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reading-recommendations">
+            <h2>Recommended For You</h2>
+            <div class="recommendations-container">
+                <div class="recommendation-card">
+                    <img src="/placeholder.svg?height=300&width=200" alt="Dune">
+                    <h3>Dune</h3>
+                    <p>Frank Herbert</p>
+                    <a href="#" class="add-btn">Add to Library</a>
+                </div>
+                <div class="recommendation-card">
+                    <img src="/placeholder.svg?height=300&width=200" alt="The Alchemist">
+                    <h3>The Alchemist</h3>
+                    <p>Paulo Coelho</p>
+                    <a href="#" class="add-btn">Add to Library</a>
+                </div>
+                <div class="recommendation-card">
+                    <img src="/placeholder.svg?height=300&width=200" alt="Educated">
+                    <h3>Educated</h3>
+                    <p>Tara Westover</p>
+                    <a href="#" class="add-btn">Add to Library</a>
+                </div>
+                <div class="recommendation-card">
+                    <img src="/placeholder.svg?height=300&width=200" alt="The Night Circus">
+                    <h3>The Night Circus</h3>
+                    <p>Erin Morgenstern</p>
+                    <a href="#" class="add-btn">Add to Library</a>
+                </div>
+              <div class="recommendation-card">
+                    <img src="/placeholder.svg?height=300&width=200" alt="The Night Circus">
+                    <h3>The Night Circus</h3>
+                    <p>Erin Morgenstern</p>
+                    <a href="#" class="add-btn">Add to Library</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>

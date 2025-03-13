@@ -1,0 +1,71 @@
+<div class="container">
+    <h1>Admin Panel - Manage Books</h1>
+
+    <section class="add-book">
+        <h2>Add New Book</h2>
+        <form (submit)="onSubmit()" #bookForm="ngForm">
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" name="bookName" [(ngModel)]="book.bookName" required />
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" [(ngModel)]="book.author" required />
+
+            <label for="category">Category:</label>
+            <div class="custom-select">
+                <select id="category" name="category" [(ngModel)]="book.category">
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non Fiction</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="biography">Biography</option>
+                    <option value="self-help">Self-Help</option>
+                </select>
+            </div>
+
+            <label for="image">Image Upload:</label>
+            <input type="file" id="image" name="image" (change)="onFileSelect($event)" accept="image/*" required />
+
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" [(ngModel)]="book.rating" min="1" max="5" required />
+
+            <button type="submit" [class]="{
+                'edit': isEditMode
+            }">
+                {{isEditMode ?'Save Changes' :'Add Book'}}
+            </button>
+        </form>
+    </section>
+
+    <section class="recent-books">
+        <h2>Recently Uploaded Books</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Image</th>
+                    <th>Rating</th>
+                    <th>Upload Date/Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(book of books; track $index){
+                <tr>
+                    <td>{{ book.bookName }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.category }}</td>
+                    <td><img [src]="book.imageUrl" [alt]="book.bookName" width="50" /></td>
+                    <td>{{ book.rating }}</td>
+                    <td>{{ book.uploadDate }}</td>
+                    <td class="actions">
+                        <button (click)="editBook(book._id)">Edit</button>
+                        <button (click)="deleteBook(book._id)">Delete</button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+</div>
